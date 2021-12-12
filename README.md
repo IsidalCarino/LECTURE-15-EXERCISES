@@ -20,4 +20,32 @@ int main()
     cout << "cube root is " << cbrt(x) << endl;
 }
 ```
-# 
+# Exercise Break - Good Morning, Good Afternoon, Good Evening, Good Night.
+```
+#include <iostream>
+#include <string>
+using namespace std;
+
+string greetings(int time) {
+    if (time < 11) { //the time (military time; 24hrs)
+        return "Good Morning";
+    }
+    else if (time < 17) {
+        return "Good Afternoon";
+    }
+    else if (time < 21) {
+        return "Good Evening";
+    }
+    else if (time < 24) {
+        return "Good Nighto"; //Oyasumi
+    }
+}
+int main()
+{
+    cout << "What time is it?" << endl;//ask
+    int userInput;
+    cin >> userInput;//get user input
+    cout << greetings(userInput) << endl;//result
+    return 0;
+}
+```
